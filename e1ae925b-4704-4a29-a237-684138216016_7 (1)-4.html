@@ -1,0 +1,42 @@
+<html lang="en" suppresshydrationwarning="{true}"><head></head><body classname="{`${geistSans.variable}" ${geistmono.variable}="" ${pacifico.variable}="" antialiased`}="">
+import type { Metadata } from "next";
+import { Geist, Geist_Mono, Pacifico } from "next/font/google";
+import "./globals.css";
+
+const pacifico = Pacifico({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-pacifico',
+})
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Tech Zameen - Flutter Development Services",
+  description: "Professional Flutter development services for cross-platform mobile applications. Expert UI/UX design and mobile app development solutions.",
+  keywords: "Flutter development, mobile app development, cross-platform apps, UI/UX design, iOS development, Android development",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly&lt;{
+  children: React.ReactNode;
+}&gt;) {
+  return (
+    
+      
+        {children}
+      
+    
+  );
+}
+</body></html>

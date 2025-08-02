@@ -1,0 +1,35 @@
+<html><head></head><body>'use client';
+
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import ContactForm from '@/components/ContactForm';
+import ContactInfo from '@/components/ContactInfo';
+
+export default function ContactPage() {
+  return (
+    <div classname="min-h-screen">
+      <header>
+      <main>
+        <section classname="py-20 bg-gradient-to-br from-blue-50 to-white">
+          <div classname="container mx-auto px-4 text-center">
+            <h1 classname="text-5xl font-bold text-gray-900 mb-6">Get In Touch</h1>
+            <p classname="text-xl text-gray-600 max-w-3xl mx-auto mb-16">
+              Ready to bring your mobile app idea to life? Contact us today and let's discuss how 
+              we can help you create amazing Flutter applications.
+            </p>
+          </div>
+        </section>
+        
+        <section classname="py-16 bg-white">
+          <div classname="container mx-auto px-4">
+            <div classname="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <contactform>
+              <contactinfo>
+            </contactinfo></contactform></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+    </footer></header></div>
+  );
+}</body></html>
